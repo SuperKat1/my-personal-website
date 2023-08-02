@@ -1,3 +1,15 @@
 body  {
-    background: rgb(109, 163, 84);
+    background: rgb(255, 255, 255);
+}
+
+font-family: 1.1em italic small-caps bold 'Fira Sans'; 
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+
+.item  {
+   margin: 0.5rem; 
 }
