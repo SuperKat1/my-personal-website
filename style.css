@@ -1,15 +1,50 @@
 body  {
-    background: rgb(255, 255, 255);
+    background: #eee;
 }
 
-font-family: 1.1em italic small-caps bold 'Fira Sans'; 
+html  {
+    font-family: sans-serif;
+    color: #030c1f;
+}
 
-.container {
-    display:flex;
+.site-header .header-container {
+    display: flex;
     flex-wrap: wrap;
-    margin: -0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #84A4FC;  
 }
 
-.item  {
-   margin: 0.5rem; 
+h1 {
+    font-size: 3em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: 5px 75px;
+}
+
+
+.main-nav ul {
+    margin: 1em 0 0.5em;
+    text-align: center;
+}
+
+.main-nav li {
+    display: inline;
+    color: #D3D4D7;
+}
+
+.main-nav a {
+    display: inline-block;
+    color: #D3D4D7;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 5px 50px;
+    letter-spacing: 0.05em;
+}
+
+.site-footer {
+    height: 30px;
+    position:absolute;
+    bottom: 0;
+    background-color: #84A4FC;
 }
