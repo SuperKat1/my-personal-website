@@ -5,7 +5,7 @@ body  {
 html  {
     font-family: sans-serif;
     color: #04060d;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
 }
 
 .coloured-text {
@@ -14,66 +14,57 @@ html  {
     font-weight: bold;
 }
 
-.site-header .header-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.site-header  {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+      ". title ."
+      "nav subtitle ."; 
     background-color: #84A4FC;  
 }
 
 h1 {
     font-size: 3em;
-    letter-spacing: 0.05em;
     text-align: center;
-    padding: 5px 75px;
+    grid-area: title;
+    margin-bottom: 0;
 }
 
-
-.main-nav ul {
-    margin: 1em 0 0.5em;
-    text-align: center;
-}
-
-.main-nav li {
-    display: inline;
-    color: #D3D4D7;
-}
-
-.main-nav a {
-    display: inline-block;
-    color: #D3D4D7;
-    text-decoration: none;
+.header-subtitle  {
     font-size: 1.5em;
-    padding: 5px 50px;
-    
+    text-align: center;
+    grid-area: subtitle;
+    margin-top: 0;
+}
+
+.header-subtitle li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 70px;
+    color: #D3D4D7;
 }
 
 .main-container {
-    display: flex;
-    min-height: 100%;
-    flex-direction: column;
-    align-items: center;
-    color: #252e45;
+    display: grid;
+    grid-template-columns: repeat (4, 200px);
 }
 
-#background {
-    margin-right: 30%;
-    margin-left: 30%;;
-    text-align: center;
-    line-height: 1.5;
-    word-spacing: 0.3em;
+grid-col-span-3  {
+    grid-column: span 3;
 }
 
-.site-footer {
-    height: 30px;
-    position:absolute;
-    bottom: 0;
-    background-color: #84A4FC;
+.about-me {
+    grid-column: 1;
 }
 
-h2 {
-    letter-spacing: 0.05em;
-    margin:0;
+.about-me-text {
+    grid-column-start: 3;
+}
 
+.languages {
+    grid-column: 3;
+}
+
+.languages-list {
+    grid-column: 3;
 }
