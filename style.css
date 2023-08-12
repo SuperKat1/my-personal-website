@@ -73,7 +73,7 @@ p {
     padding:2rem;
     border-radius: 0.5rem;
     box-shadow: 1rem 2rem 2rem;
-    align-content: center;
+   
    }
 
 img {
@@ -94,3 +94,10 @@ img {
 .photo1 {flex: 0.9; }
 .photo2 {flex: 0.8; }
 .photo3 {flex: 0.6; }
+
+.site-footer {
+    width:100%;
+    padding: 1.1rem;
+    text-align: center;
+    background-color: #84A4FC;  
+}
