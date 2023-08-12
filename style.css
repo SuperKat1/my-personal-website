@@ -1,39 +1,38 @@
 body  {
     background: #eee;
+    font-size: 1.125rem;
+    line-height: 1.5;
 }
 
 html  {
     font-family: sans-serif;
     color: #04060d;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
 }
 
 .coloured-text {
     color: #324782;
-    font-style: italic;
     font-weight: bold;
 }
 
-.site-header  {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas:
-      ". title ."
-      "nav subtitle ."; 
+header  {
+    width:100%;
+    padding: 1.1rem;
+    text-align: center;
     background-color: #84A4FC;  
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
     text-align: center;
-    grid-area: title;
+    letter-spacing: 0.5rem;
     margin-bottom: 0;
 }
 
 .header-subtitle  {
     font-size: 1.5em;
     text-align: center;
-    grid-area: subtitle;
+    letter-spacing: 0.5rem;
     margin-top: 0;
 }
 
@@ -44,27 +43,54 @@ h1 {
     color: #D3D4D7;
 }
 
-.main-container {
-    display: grid;
-    grid-template-columns: repeat (4, 200px);
+.text-wrapper {
+    text-align: justify;
+    margin: 0rem 35rem 0rem 35rem;
+    padding: 2rem;
 }
 
-grid-col-span-3  {
-    grid-column: span 3;
+h2 {
+    text-align:center;
+    letter-spacing: 0.5rem;
+    margin-bottom: 0.1rem;
 }
 
-.about-me {
-    grid-column: 1;
+h3 {
+    font-size: 1.0em; 
+    padding-right: 15rem;
 }
 
-.about-me-text {
-    grid-column-start: 3;
+.align-text  {
+    display: flex;
+    justify-content: center;
 }
 
-.languages {
-    grid-column: 3;
+p {
+    font-size: 1.0em;
 }
 
-.languages-list {
-    grid-column: 3;
+.portfolio {
+    padding:2rem;
+    border-radius: 0.5rem;
+    box-shadow: 1rem 2rem 2rem;
+    align-content: center;
+   }
+
+img {
+    float:left;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
+
+.portfolio-grid {
+    display: flex;
+    gap: 5px;
+    width: 60%;
+    margin: 0rem 30rem 0rem 30rem;
+    padding: 2rem;
+}
+
+.photo1 {flex: 0.9; }
+.photo2 {flex: 0.8; }
+.photo3 {flex: 0.6; }
