@@ -7,7 +7,7 @@ body  {
 html  {
     font-family: sans-serif;
     color: #04060d;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
 }
 
 .coloured-text {
@@ -45,7 +45,7 @@ h1 {
 
 .text-wrapper {
     text-align: justify;
-    margin: 0rem 35rem 0rem 35rem;
+    margin: 0rem 30rem 0rem 30rem;
     padding: 2rem;
 }
 
@@ -67,6 +67,7 @@ h3 {
 
 p {
     font-size: 1.0em;
+    letter-spacing: normal;
 }
 
 .portfolio {
@@ -86,8 +87,8 @@ img {
 .portfolio-grid {
     display: flex;
     gap: 5px;
-    width: 60%;
-    margin: 0rem 30rem 0rem 30rem;
+    width: 50%;
+    margin: 0rem 10rem 0rem 30rem;
     padding: 2rem;
 }
 
